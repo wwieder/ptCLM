@@ -9,8 +9,11 @@
 # Uses daily preciptiation data from Saddle, distributed as CRNS observations (30 minute) 
 # All other data from Tvan towers, from John Knowles 2015
 
+# install.packages("REddyProc")
+ install.packages("ncdf4") # ncdf package depricatded in R 3.5.3
+
   library(REddyProc)
-  library(ncdf)
+  library(ncdf4)
 
   dir = "~/Desktop/Working_files/Niwot/NR_fluxes/TVan/mpg_formatted/out_2008_2013"
   setwd(dir)
